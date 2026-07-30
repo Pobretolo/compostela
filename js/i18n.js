@@ -27,7 +27,7 @@ const UI_TEXT = {
 
   hero_eyebrow:    { es: "Nos casamos", en: "We're getting married" },
   hero_date:       { es: "1 de agosto de 2026 · Santiago de Compostela", en: "1st August 2026 · Santiago de Compostela" },
-  hero_sub:        { es: "Todo lo que necesitas para el gran día y para descubrir la ciudad mientras estás por aquí.", en: "Everything you need for the big day, and for discovering the city while you're here." },
+  hero_sub:        { es: "Todo lo que necesitas para descubrir la ciudad mientras estás por aquí.", en: "Everything you need for discovering the city while you're here." },
 
   home_photo_title: { es: "Foto Explorer", en: "Photo Explorer" },
   home_photo_desc:  { es: "Un juego de pistas por la ciudad. Encuentra el lugar y consigue tu sello.", en: "A clue-hunting game around the city. Find the spot and earn your stamp." },
@@ -103,8 +103,8 @@ const UI_TEXT = {
 
   page_salir_title: { es: "¿Por dónde salir?", en: "Nightlife guide" },
   page_salir_sub: {
-    es: "Santiago no compite en tamaño con Madrid o Barcelona, pero sí en ambiente: al ser ciudad universitaria y de peregrinación, cada noche mezcla a estudiantes, vecinos, turistas y peregrinos en un público muy diverso. No existe un \"barrio gay\" como Chueca, pero toda la ciudad es gay friendly — los marcados como \"Mayoritariamente gay\" son, además, los referentes más claros del ambiente LGTBIQ+. Filtra abajo por lo que te apetezca esta noche.",
-    en: "Santiago doesn't compete with Madrid or Barcelona in size, but it does in atmosphere: as a university and pilgrimage city, every night mixes students, locals, tourists, and pilgrims into a wonderfully varied crowd. There's no \"gay district\" like Chueca, but the whole city is gay friendly — the ones marked \"Predominantly gay\" are the clearest go-to spots for the LGBTQI+ scene. Filter below by whatever you're in the mood for tonight."
+    es: "Santiago no compite en tamaño con Madrid o Barcelona, pero sí en ambiente: al ser ciudad universitaria y de peregrinación, cada noche mezcla a estudiantes, vecinos, turistas y peregrinos en un público muy diverso. Filtra abajo por lo que te apetezca esta noche.",
+    en: "Santiago doesn't compete with Madrid or Barcelona in size, but it does in atmosphere: as a university and pilgrimage city, every night mixes students, locals, tourists, and pilgrims into a wonderfully varied crowd. Filter below by whatever you're in the mood for tonight."
   },
   salir_filter_music: { es: "Música", en: "Music" },
   salir_filter_tapa: { es: "Tapa con la bebida", en: "Tapa with your drink" },

@@ -780,7 +780,7 @@ const SALIR_ITEMS = [
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=Casa+das+Crechas+Santiago+de+Compostela",
     description: {
       es: "El bar de referencia en Santiago para música folk e irlandesa en directo. Sesiones espontáneas de gaita y violín casi cualquier noche, cerca de Praza de Praterías.",
-      gl: "O bar de referencia en Santiago para música folk e irlandesa en directo. Sesións espontáneas de gaita e violín case calquera noite, preto da Praza de Praterías.",
+      gl: "O bar de referencia en Santiago para música folk e irlandesa en directo. Foliadas case calquera noite, preto da Praza de Praterías.",
       en: "Santiago's go-to spot for live folk and Irish music. Spontaneous bagpipe and fiddle sessions happen most nights, near Praza de Praterías."
     }
   },

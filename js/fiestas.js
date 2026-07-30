@@ -33,17 +33,17 @@ function renderFiestas() {
   }
 
   wrap.innerHTML = upcoming.map((day) => {
-    const isWeddingEve = !!day.isWeddingEve;
+    const isClosingNight = !!day.isClosingNight;
     const isGaias = !!day.isGaias;
     const icon = isGaias ? ICONS.sunset() : ICONS.fireworks();
 
     return `
-      <div class="card" style="${isWeddingEve ? "border-color:var(--gold);" : ""}display:flex;gap:18px;align-items:flex-start;">
-        <span class="stamp ${isWeddingEve ? "stamp-earned" : "stamp-locked"}" style="width:56px;height:56px;flex-shrink:0;">
+      <div class="card" style="${isClosingNight ? "border-color:var(--gold);" : ""}display:flex;gap:18px;align-items:flex-start;">
+        <span class="stamp ${isClosingNight ? "stamp-earned" : "stamp-locked"}" style="width:56px;height:56px;flex-shrink:0;">
           ${icon}
         </span>
         <div>
-          ${isWeddingEve ? `<span class="tag" style="color:var(--gold);border-color:var(--gold);margin-bottom:8px;">${UI_TEXT.fiestas_wedding_eve[lang]}</span>` : ""}
+          ${isClosingNight ? `<span class="tag" style="color:var(--gold);border-color:var(--gold);margin-bottom:8px;">${UI_TEXT.fiestas_closing_night[lang]}</span>` : ""}
           ${isGaias ? `<span class="tag" style="color:var(--moss);border-color:var(--moss);margin-bottom:8px;">Atardecer no Gaiás</span>` : ""}
           <p class="eyebrow" style="color:var(--rust);">${day.date[lang]}</p>
           <h3>${day.title[lang]}</h3>

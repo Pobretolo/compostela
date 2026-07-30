@@ -25,8 +25,8 @@ const UI_TEXT = {
   eyebrow_parisdakar: { es: "Tradición compostelana", en: "Compostela tradition" },
   eyebrow_datos:      { es: "Información práctica", en: "Practical information" },
 
-  hero_eyebrow:    { es: "Nos casamos", en: "We're getting married" },
-  hero_date:       { es: "1 de agosto de 2026 · Santiago de Compostela", en: "1st August 2026 · Santiago de Compostela" },
+  hero_eyebrow:    { es: "Guía de viaje", en: "Travel guide" },
+  hero_date:       { es: "Camino, historia y buena mesa", en: "The Camino, history, and good food" },
   hero_sub:        { es: "Todo lo que necesitas para descubrir la ciudad mientras estás por aquí.", en: "Everything you need for discovering the city while you're here." },
 
   home_photo_title: { es: "Foto Explorer", en: "Photo Explorer" },
@@ -150,7 +150,7 @@ const UI_TEXT = {
     es: "El programa oficial de las fiestas patronales de Santiago.",
     en: "The official program for Santiago's patron saint festivities."
   },
-  fiestas_wedding_eve: { es: "Cierre de fiestas", en: "Closing night" },
+  fiestas_closing_night: { es: "Cierre de fiestas", en: "Closing night" },
   fiestas_all_past: {
     es: "Las Fiestas del Apóstol de este año ya han terminado. ¡Hasta el año que viene!",
     en: "This year's Fiestas del Apóstol have already wrapped up. See you next year!"

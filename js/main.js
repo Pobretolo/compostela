@@ -43,7 +43,7 @@ function renderTengoCoche() {
   }).join("");
 }
 
-let comerFilters = { category: "all", breakfast: false, terrace: false, michelin: false };
+let comerFilters = { category: "all", breakfast: false, terrace: false, michelin: false, petFriendly: false };
 
 function renderComer() {
   const wrap = document.getElementById("comer-list");
@@ -71,6 +71,7 @@ function renderComer() {
     if (comerFilters.breakfast && !item.breakfast) return false;
     if (comerFilters.terrace && !item.terrace) return false;
     if (comerFilters.michelin && !item.michelin) return false;
+    if (comerFilters.petFriendly && !item.petFriendly) return false;
     return true;
   });
 
@@ -104,6 +105,7 @@ function renderComer() {
         ${item.breakfast ? `<span class="tag icon-tag" style="color:var(--gold);border-color:var(--gold);">${ICONS.cup()}${UI_TEXT.comer_breakfast[lang]}</span>` : ""}
         ${item.terrace ? `<span class="tag icon-tag" style="color:var(--moss);border-color:var(--moss);">${ICONS.terrace()}${UI_TEXT.comer_filter_terrace[lang]}</span>` : ""}
         ${item.michelin ? `<span class="tag icon-tag" style="color:var(--rust);border-color:var(--rust);">${ICONS.michelin()}${UI_TEXT.comer_filter_michelin[lang]}</span>` : ""}
+        ${item.petFriendly ? `<span class="tag icon-tag" style="color:var(--moss);border-color:var(--moss);">${ICONS.paw()}${UI_TEXT.comer_filter_pet[lang]}</span>` : ""}
         ${priceHtml}
       </div>
       <p style="margin-top:12px;">${item.description[lang]}</p>
@@ -145,6 +147,7 @@ function setupComerFilters() {
     ["filter-breakfast", "breakfast"],
     ["filter-terrace", "terrace"],
     ["filter-michelin", "michelin"],
+    ["filter-pet", "petFriendly"],
   ];
 
   toggles.forEach(([id, key]) => {

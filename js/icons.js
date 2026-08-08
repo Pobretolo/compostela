@@ -192,4 +192,13 @@ const ICONS = {
       <path d="M12 21s7-6.5 7-11a7 7 0 10-14 0c0 4.5 7 11 7 11z"/>
       <circle cx="12" cy="10" r="2.4"/>
     </svg>`,
+
+  // Pet friendly — pata de mascota
+  paw: () => `
+    <svg viewBox="0 0 24 24" fill="currentColor" stroke="none">
+      <ellipse cx="7" cy="9.5" rx="1.8" ry="2.4"/>
+      <ellipse cx="12" cy="7" rx="1.8" ry="2.4"/>
+      <ellipse cx="17" cy="9.5" rx="1.8" ry="2.4"/>
+      <path d="M12 12.2c-3.3 0-6 2.3-6 4.7 0 1.5 1.3 2.6 2.9 2.2 1-.25 2-.6 3.1-.6s2.1.35 3.1.6c1.6.4 2.9-.7 2.9-2.2 0-2.4-2.7-4.7-6-4.7z"/>
+    </svg>`,
 };

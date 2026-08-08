@@ -151,6 +151,7 @@ const UI_TEXT = {
   comer_filter_breakfast: { es: "Desayunos", gl: "Almorzos", en: "Breakfast" },
   comer_filter_terrace: { es: "Terraza / jardín", gl: "Terraza / xardín", en: "Terrace / garden" },
   comer_filter_michelin: { es: "Guía Michelin", gl: "Guía Michelin", en: "Michelin Guide" },
+  comer_filter_pet: { es: "Pet friendly", gl: "Pet friendly", en: "Pet friendly" },
   comer_no_results: { es: "No hay locales con esos filtros. Prueba a quitar alguno.", gl: "Non hai locais con eses filtros. Proba a quitar algún.", en: "No spots match those filters. Try removing one." },
 
   page_fiestas_title: { es: "Fiestas del Apóstol 2026", gl: "Festas do Apóstolo 2026", en: "Fiestas del Apóstol 2026" },

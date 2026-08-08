@@ -9,10 +9,10 @@ const UI_TEXT = {
   nav_home:        { es: "Inicio",          gl: "Inicio",          en: "Home" },
   nav_photo:       { es: "Foto Explorer",   gl: "Foto Explorer",   en: "Photo Explorer" },
   nav_ver:         { es: "Qué ver en un día", gl: "Que ver nun día", en: "One-day guide" },
-  nav_coche:       { es: "¡Tengo coche!",   gl: "¡Teño coche!",    en: "I have a car!" },
-  nav_salir:       { es: "¿Por dónde salir?", gl: "¿Por onde saír?", en: "Nightlife guide" },
+  nav_coche:       { es: "¡Tengo coche!",   gl: "Teño coche!",    en: "I have a car!" },
+  nav_salir:       { es: "¿Por dónde salir?", gl: "Por onde saír?", en: "Nightlife guide" },
   nav_comer:       { es: "Dónde comer",     gl: "Onde comer",      en: "Where to eat" },
-  nav_perro:       { es: "¡Voy con un perro!", gl: "¡Vou cun can!", en: "Travelling with a dog!" },
+  nav_perro:       { es: "¡Voy con un perro!", gl: "Vou cun can!", en: "Travelling with a dog!" },
   nav_fiestas:     { es: "Fiestas del Apóstol", gl: "Festas do Apóstolo", en: "Fiestas del Apóstol" },
   nav_parisdakar:  { es: "Pasaporte París-Dakar", gl: "Pasaporte París-Dakar", en: "Paris-Dakar passport" },
   nav_datos:       { es: "Datos de interés", gl: "Datos de interese", en: "Practical info" },
@@ -37,16 +37,16 @@ const UI_TEXT = {
   home_ver_title:  { es: "Qué ver en un día", gl: "Que ver nun día", en: "One-day guide" },
   home_ver_desc:   { es: "Nuestra ruta favorita para descubrir Santiago si solo tienes un día.", gl: "A nosa ruta favorita para descubrir Santiago se só tes un día.", en: "Our favorite route to discover Santiago if you only have one day." },
 
-  home_coche_title: { es: "¡Tengo coche!", gl: "¡Teño coche!", en: "I have a car!" },
+  home_coche_title: { es: "¡Tengo coche!", gl: "Teño coche!", en: "I have a car!" },
   home_coche_desc:  { es: "Escapadas por Galicia y A Coruña si te quieres alejar un poco de la ciudad.", gl: "Escapadas por Galicia e A Coruña se queres afastarte un pouco da cidade.", en: "Day trips around Galicia and A Coruña if you fancy venturing outside the city." },
 
-  home_salir_title: { es: "¿Por dónde salir?", gl: "¿Por onde saír?", en: "Nightlife guide" },
+  home_salir_title: { es: "¿Por dónde salir?", gl: "Por onde saír?", en: "Nightlife guide" },
   home_salir_desc:  { es: "Bares y planes nocturnos, filtrados por lo que te apetezca esta noche.", gl: "Bares e plans nocturnos, filtrados polo que che apeteza esta noite.", en: "Bars and night plans, filtered by whatever you're in the mood for tonight." },
 
   home_comer_title: { es: "Dónde comer", gl: "Onde comer", en: "Where to eat" },
   home_comer_desc:  { es: "Nuestros sitios de confianza para comer bien en Santiago.", gl: "Os nosos sitios de confianza para comer ben en Santiago.", en: "Our trusted spots to eat well in Santiago." },
 
-  home_perro_title: { es: "¡Voy con un perro!", gl: "¡Vou cun can!", en: "Travelling with a dog!" },
+  home_perro_title: { es: "¡Voy con un perro!", gl: "Vou cun can!", en: "Travelling with a dog!" },
   home_perro_desc:  { es: "Restaurantes, parques caninos y rutas de paseo para disfrutar de Santiago con tu perro.", gl: "Restaurantes, parques caninos e rutas de paseo para gozar de Santiago co teu can.", en: "Restaurants, dog parks, and walking routes to enjoy Santiago with your dog." },
 
   home_fiestas_title: { es: "Fiestas del Apóstol", gl: "Festas do Apóstolo", en: "Fiestas del Apóstol" },
@@ -70,7 +70,7 @@ const UI_TEXT = {
   photo_clue1: { es: "Pista · La foto", gl: "Pista · A foto", en: "Clue · The photo" },
   photo_reveal_clue3: { es: "Revelar ubicación", gl: "Revelar localización", en: "Reveal location" },
   photo_open_maps: { es: "Abrir en Google Maps", gl: "Abrir en Google Maps", en: "Open in Google Maps" },
-  photo_found_btn: { es: "¡Lo he encontrado!", gl: "¡Xa o atopei!", en: "I found it!" },
+  photo_found_btn: { es: "¡Lo he encontrado!", gl: "Xa o atopei!", en: "I found it!" },
   photo_reward_title: { es: "Sello conseguido", gl: "Selo conseguido", en: "Stamp earned" },
   photo_close: { es: "Cerrar", gl: "Pechar", en: "Close" },
   photo_locked_hint: { es: "Toca para empezar", gl: "Toca para comezar", en: "Tap to start" },
@@ -93,7 +93,7 @@ const UI_TEXT = {
     en: "(No photo has been added for this clue yet)"
   },
   fe_enable_proximity: { es: "🧭 Activar guía de proximidad", gl: "🧭 Activar guía de proximidade", en: "🧭 Enable proximity guide" },
-  fe_arrived: { es: "¡Estás cerca de", gl: "¡Estás preto de", en: "You're near" },
+  fe_arrived: { es: "¡Estás cerca de", gl: "Estás preto de", en: "You're near" },
 
   fe_extra_title: { es: "Un extra: las marcas de las casas", gl: "Un extra: as marcas das casas", en: "A little extra: the house marks" },
   fe_extra_text: {
@@ -111,7 +111,7 @@ const UI_TEXT = {
     en: "Some of the most interesting spots you can walk to if you only have one day in Santiago."
   },
 
-  page_coche_title: { es: "¡Tengo coche!", gl: "¡Teño coche!", en: "I have a car!" },
+  page_coche_title: { es: "¡Tengo coche!", gl: "Teño coche!", en: "I have a car!" },
   page_coche_sub: {
     es: "Si te apetece alquilar un coche y salir de la ciudad, estas son nuestras recomendaciones por Galicia y A Coruña. Los anillos indican lo imprescindible que nos parece cada sitio si es tu primera vez en Galicia.",
     gl: "Se che apetece alugar un coche e saír da cidade, estas son as nosas recomendacións por Galicia e A Coruña. Os aneis indican o imprescindible que nos parece cada lugar se é a túa primeira vez en Galicia.",
@@ -120,7 +120,7 @@ const UI_TEXT = {
   coche_rating_label: { es: "Interés para tu primera vez en Galicia", gl: "Interese para a túa primeira vez en Galicia", en: "Interest for your first time in Galicia" },
   coche_distance: { es: "Distancia desde Santiago", gl: "Distancia desde Santiago", en: "Distance from Santiago" },
 
-  page_salir_title: { es: "¿Por dónde salir?", gl: "¿Por onde saír?", en: "Nightlife guide" },
+  page_salir_title: { es: "¿Por dónde salir?", gl: "Por onde saír?", en: "Nightlife guide" },
   page_salir_sub: {
     es: "Santiago no compite en tamaño con Madrid o Barcelona, pero sí en ambiente: al ser ciudad universitaria y de peregrinación, cada noche mezcla a estudiantes, vecinos, turistas y peregrinos en un público muy diverso. Filtra abajo por lo que te apetezca esta noche.",
     gl: "Santiago é pequena, pero iso non lle resta nin un chisco de ambiente: ao ser cidade universitaria e de peregrinación, cada noite mestura estudantes, veciños, turistas e peregrinos nun público moi diverso. Filtra embaixo polo que che apeteza esta noite.",
@@ -168,7 +168,7 @@ const UI_TEXT = {
   comer_filter_pet: { es: "Pet friendly", gl: "Pet friendly", en: "Pet friendly" },
   comer_no_results: { es: "No hay locales con esos filtros. Prueba a quitar alguno.", gl: "Non hai locais con eses filtros. Proba a quitar algún.", en: "No spots match those filters. Try removing one." },
 
-  page_perro_title: { es: "¡Voy con un perro!", gl: "¡Vou cun can!", en: "Travelling with a dog!" },
+  page_perro_title: { es: "¡Voy con un perro!", gl: "Vou cun can!", en: "Travelling with a dog!" },
   page_perro_sub: {
     es: "Restaurantes y cafeterías donde tu perro es bienvenido, parques caninos y rutas de paseo por Santiago. Información contrastada con el listado oficial de Turismo de Santiago y prensa local — si vas a un restaurante, siempre es buena idea avisar al reservar.",
     gl: "Restaurantes e cafetarías onde o teu can é benvido, parques caninos e rutas de paseo por Santiago. Información contrastada coa listaxe oficial de Turismo de Santiago e prensa local — se vas a un restaurante, sempre é boa idea avisar ao reservar.",
@@ -189,7 +189,7 @@ const UI_TEXT = {
   fiestas_closing_night: { es: "Cierre de fiestas", gl: "Peche das festas", en: "Closing night" },
   fiestas_all_past: {
     es: "Las Fiestas del Apóstol de este año ya han terminado. ¡Hasta el año que viene!",
-    gl: "As Festas do Apóstolo deste ano xa remataron. ¡Ata o ano que vén!",
+    gl: "As Festas do Apóstolo deste ano xa remataron. Ata o ano que vén!",
     en: "This year's Fiestas del Apóstol have already wrapped up. See you next year!"
   },
 
@@ -220,7 +220,7 @@ const UI_TEXT = {
     gl: "Se vos apetece alongar a ruta ou facer unha parada máis tranquila para comer algo, estes lugares non forman parte do percorrido clásico da Rúa do Franco/Raíña pero merecen a pena igualmente. Non contan para o pasaporte de selos.",
     en: "If you fancy extending the route or taking a calmer sit-down stop for food, these places aren't part of the classic Rúa do Franco/Raíña route but are still worth it. They don't count toward the stamp passport."
   },
-  parisdakar_complete_title: { es: "¡Ruta completada!", gl: "¡Ruta completada!", en: "Route complete!" },
+  parisdakar_complete_title: { es: "¡Ruta completada!", gl: "Ruta completada!", en: "Route complete!" },
   parisdakar_complete_text: {
     es: "Habéis llegado al Dakar. Enhorabuena, ya formáis parte de la tradición compostelana.",
     gl: "Chegastes ao Dakar. Parabéns, xa formades parte da tradición compostelá.",

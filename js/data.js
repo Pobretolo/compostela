@@ -1529,7 +1529,7 @@ const COMER_ITEMS = [
 
 const PERRO_ITEMS = [
   {
-    name: "Adelia",
+    name: { es: "Adelia", gl: "Adelia", en: "Adelia" },
     type: "comer",
     tagIcon: "cup",
     tag: { es: "Cafetería", gl: "Cafetaría", en: "Café" },
@@ -1542,7 +1542,7 @@ const PERRO_ITEMS = [
     }
   },
   {
-    name: "O Sendeiro Food Experience",
+    name: { es: "O Sendeiro Food Experience", gl: "O Sendeiro Food Experience", en: "O Sendeiro Food Experience" },
     type: "comer",
     tagIcon: "star",
     tag: { es: "Alta cocina", gl: "Alta cociña", en: "Fine dining" },
@@ -1555,7 +1555,7 @@ const PERRO_ITEMS = [
     }
   },
   {
-    name: "Abastos 2.0",
+    name: { es: "Abastos 2.0", gl: "Abastos 2.0", en: "Abastos 2.0" },
     type: "comer",
     tagIcon: "fish",
     tag: { es: "Marisco", gl: "Marisco", en: "Seafood" },
@@ -1568,7 +1568,7 @@ const PERRO_ITEMS = [
     }
   },
   {
-    name: "Café Costa Vella (O Xardín das Delicias)",
+    name: { es: "Café Costa Vella (O Xardín das Delicias)", gl: "Café Costa Vella (O Xardín das Delicias)", en: "Café Costa Vella (O Xardín das Delicias)" },
     type: "comer",
     tagIcon: "terrace",
     tag: { es: "Cafetería con jardín", gl: "Cafetaría con xardín", en: "Café with garden" },
@@ -1581,7 +1581,7 @@ const PERRO_ITEMS = [
     }
   },
   {
-    name: "Sixto",
+    name: { es: "Sixto", gl: "Sixto", en: "Sixto" },
     type: "comer",
     tagIcon: "fish",
     tag: { es: "Marisco", gl: "Marisco", en: "Seafood" },
@@ -1593,7 +1593,7 @@ const PERRO_ITEMS = [
     }
   },
   {
-    name: "El Muelle",
+    name: { es: "El Muelle", gl: "El Muelle", en: "El Muelle" },
     type: "comer",
     tagIcon: "cup",
     tag: { es: "Cafetería", gl: "Cafetaría", en: "Café" },
@@ -1605,7 +1605,7 @@ const PERRO_ITEMS = [
     }
   },
   {
-    name: "Redes",
+    name: { es: "Redes", gl: "Redes", en: "Redes" },
     type: "comer",
     tagIcon: "fish",
     tag: { es: "Marisco", gl: "Marisco", en: "Seafood" },
@@ -1617,7 +1617,7 @@ const PERRO_ITEMS = [
     }
   },
   {
-    name: "Café La Morena",
+    name: { es: "Café La Morena", gl: "Café La Morena", en: "Café La Morena" },
     type: "comer",
     tagIcon: "terrace",
     tag: { es: "Terraza", gl: "Terraza", en: "Terrace" },
@@ -1629,7 +1629,7 @@ const PERRO_ITEMS = [
     }
   },
   {
-    name: "Parque canino de Eugenio Granell",
+    name: { es: "Parque canino de Eugenio Granell", gl: "Parque canino de Eugenio Granell", en: "Eugenio Granell dog park" },
     type: "parque",
     tagIcon: "fence",
     tag: { es: "Parque vallado", gl: "Parque valado", en: "Fenced dog park" },
@@ -1641,7 +1641,7 @@ const PERRO_ITEMS = [
     }
   },
   {
-    name: "Parque canino de Galeras",
+    name: { es: "Parque canino de Galeras", gl: "Parque canino de Galeras", en: "Galeras dog park" },
     type: "parque",
     tagIcon: "fence",
     tag: { es: "Parque vallado", gl: "Parque valado", en: "Fenced dog park" },
@@ -1653,7 +1653,7 @@ const PERRO_ITEMS = [
     }
   },
   {
-    name: "Zona de perricidad de Belvís",
+    name: { es: "Zona de perricidad de Belvís", gl: "Zona de perricidade de Belvís", en: "Belvís off-leash zone" },
     type: "parque",
     tagIcon: "leaf",
     tag: { es: "Zona sin correa", gl: "Zona sen correa", en: "Off-leash zone" },
@@ -1665,7 +1665,7 @@ const PERRO_ITEMS = [
     }
   },
   {
-    name: "Zona de perricidad de la Alameda",
+    name: { es: "Zona de perricidad de la Alameda", gl: "Zona de perricidade da Alameda", en: "Alameda off-leash zone" },
     type: "parque",
     tagIcon: "leaf",
     tag: { es: "Zona sin correa", gl: "Zona sen correa", en: "Off-leash zone" },
@@ -1677,7 +1677,7 @@ const PERRO_ITEMS = [
     }
   },
   {
-    name: "Cidade da Cultura",
+    name: { es: "Cidade da Cultura", gl: "Cidade da Cultura", en: "Cidade da Cultura" },
     type: "ruta",
     tagIcon: "footprints",
     tag: { es: "Paseo con vistas", gl: "Paseo con vistas", en: "Scenic walk" },
@@ -1689,7 +1689,7 @@ const PERRO_ITEMS = [
     }
   },
   {
-    name: "Monte do Gozo",
+    name: { es: "Monte do Gozo", gl: "Monte do Gozo", en: "Monte do Gozo" },
     type: "ruta",
     tagIcon: "footprints",
     tag: { es: "Mirador", gl: "Miradoiro", en: "Viewpoint" },
@@ -1701,7 +1701,7 @@ const PERRO_ITEMS = [
     }
   },
   {
-    name: "Río Sarela (Galeras)",
+    name: { es: "Río Sarela (Galeras)", gl: "Río Sarela (Galeras)", en: "Sarela River (Galeras)" },
     type: "ruta",
     tagIcon: "wave",
     tag: { es: "Chapuzón en el río", gl: "Chapuzón no río", en: "River dip" },
@@ -1713,7 +1713,7 @@ const PERRO_ITEMS = [
     }
   },
   {
-    name: "Río Sar (Pontepedriña)",
+    name: { es: "Río Sar (Pontepedriña)", gl: "Río Sar (Pontepedriña)", en: "Sar River (Pontepedriña)" },
     type: "ruta",
     tagIcon: "wave",
     tag: { es: "Chapuzón en el río", gl: "Chapuzón no río", en: "River dip" },

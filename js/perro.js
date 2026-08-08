@@ -21,8 +21,8 @@ function renderPerro() {
 
   wrap.innerHTML = filtered.map((item) => `
     <div class="card">
-      ${item.image ? `<img src="${item.image}" alt="${item.name}" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;margin-bottom:14px;">` : ""}
-      <h3>${item.name}</h3>
+      ${item.image ? `<img src="${item.image}" alt="${item.name[lang]}" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;margin-bottom:14px;">` : ""}
+      <h3>${item.name[lang]}</h3>
       <div style="margin-bottom:12px;display:flex;flex-wrap:wrap;gap:8px;">
         <span class="tag icon-tag" style="color:${typeColor[item.type] || "var(--rust)"};border-color:${typeColor[item.type] || "var(--rust)"}">${ICONS[item.tagIcon] ? ICONS[item.tagIcon]() : ""}${item.tag[lang]}</span>
       </div>

@@ -95,6 +95,15 @@ const UI_TEXT = {
   fe_enable_proximity: { es: "🧭 Activar guía de proximidad", gl: "🧭 Activar guía de proximidade", en: "🧭 Enable proximity guide" },
   fe_arrived: { es: "¡Estás cerca de", gl: "¡Estás preto de", en: "You're near" },
 
+  fe_extra_title: { es: "Un extra: las marcas de las casas", gl: "Un extra: as marcas das casas", en: "A little extra: the house marks" },
+  fe_extra_text: {
+    es: "Si te ha gustado fijarte en los detalles, en el casco histórico también hay cientos de marcas talladas en las fachadas de las casas — señales que antiguamente indicaban a qué convento o institución pertenecía cada edificio. La cuenta de Instagram @marcas_de_compostela las cataloga, con un mapa de más de 250 ubicaciones para ir descubriéndolas mientras paseas.",
+    gl: "Se che gustou fixarte nos detalles, no casco histórico tamén hai centos de marcas talladas nas fachadas das casas — sinais que antigamente indicaban a que convento ou institución pertencía cada edificio. A conta de Instagram @marcas_de_compostela recompílaas, cun mapa de máis de 250 localizacións para ir descubríndoas mentres paseas.",
+    en: "If you enjoyed spotting little details, the old town also hides hundreds of marks carved into house façades — symbols that once showed which convent or institution owned each building. The Instagram account @marcas_de_compostela catalogs them, with a map of over 250 locations to keep discovering as you wander."
+  },
+  fe_extra_maps_btn: { es: "Ver el mapa", gl: "Ver o mapa", en: "View the map" },
+  fe_extra_ig_btn: { es: "Instagram", gl: "Instagram", en: "Instagram" },
+
   page_ver_title: { es: "Qué ver en un día", gl: "Que ver nun día", en: "One-day guide" },
   page_ver_sub: {
     es: "Algunos de los puntos más interesantes a los que puedes acercarte caminando si solo tienes un día en Santiago.",

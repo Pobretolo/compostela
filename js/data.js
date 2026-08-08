@@ -1482,6 +1482,7 @@ const COMER_ITEMS = [
     image: "https://i.imgur.com/jNaT1Yf.jpeg",
     category: "cafeteria",
     breakfast: true,
+    petFriendly: true,
     rating: 4.3,
     ratingApprox: true,
     price: 1,
@@ -1629,6 +1630,79 @@ const PERRO_ITEMS = [
     }
   },
   {
+    name: { es: "Tertulia", gl: "Tertulia", en: "Tertulia" },
+    type: "comer",
+    tagIcon: "cup",
+    tag: { es: "Cafetería", gl: "Cafetaría", en: "Café" },
+    image: "https://i.imgur.com/jNaT1Yf.jpeg",
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Cafe+Tertulia+Santiago+de+Compostela",
+    description: {
+      es: "Un clásico para desayunar con calma y leer un libro. Ambiente sencillo y tranquilo, con hueco para que tu perro se tumbe a tu lado.",
+      gl: "Un clásico para almorzar con calma e ler un libro. Ambiente sinxelo e tranquilo, con oco para que o teu can se deite ao teu carón.",
+      en: "A classic spot for a relaxed breakfast and a good book. A simple, calm atmosphere, with room for your dog to settle in beside you."
+    }
+  },
+  {
+    name: { es: "Arena Cafetería", gl: "Arena Cafetería", en: "Arena Cafetería" },
+    type: "comer",
+    tagIcon: "cup",
+    tag: { es: "Cafetería", gl: "Cafetaría", en: "Café" },
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Arena+Cafeteria+Rua+de+Alfredo+Branas+Santiago+de+Compostela",
+    description: {
+      es: "Cafetería tranquila junto a la Igrexa de Santa Susana, con tapas y buen café. Incluida en el listado oficial de locales dog friendly de Turismo de Santiago.",
+      gl: "Cafetaría tranquila xunto á Igrexa de Santa Susana, con tapas e bo café. Incluída na listaxe oficial de locais dog friendly de Turismo de Santiago.",
+      en: "A quiet café next to the Igrexa de Santa Susana, with tapas and good coffee. Featured on Turismo de Santiago's official list of dog-friendly spots."
+    }
+  },
+  {
+    name: { es: "A Café", gl: "A Café", en: "A Café" },
+    type: "comer",
+    tagIcon: "cup",
+    tag: { es: "Cafetería de especialidad", gl: "Cafetaría de especialidade", en: "Specialty coffee" },
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=A+Cafe+Praza+de+San+Fiz+Santiago+de+Compostela",
+    description: {
+      es: "Cafetería de especialidad en la Praza de San Fiz, junto al Mercado de Abastos, con café de tueste propio. Incluida en el listado oficial de locales dog friendly de Turismo de Santiago.",
+      gl: "Cafetaría de especialidade na Praza de San Fiz, xunto ao Mercado de Abastos, con café de torrefacción propia. Incluída na listaxe oficial de locais dog friendly de Turismo de Santiago.",
+      en: "A specialty coffee shop on Praza de San Fiz, next to the Mercado de Abastos, with its own house roast. Featured on Turismo de Santiago's official list of dog-friendly spots."
+    }
+  },
+  {
+    name: { es: "Cáscara Café & Brunch", gl: "Cáscara Café & Brunch", en: "Cáscara Café & Brunch" },
+    type: "comer",
+    tagIcon: "cup",
+    tag: { es: "Brunch", gl: "Brunch", en: "Brunch" },
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Cascara+Cafe+Brunch+Rua+da+Troia+Santiago+de+Compostela",
+    description: {
+      es: "Brunch con opciones veganas y vegetarianas cerca de la Catedral y San Martiño Pinario, con una terraza amplia. Incluido en el listado oficial de locales dog friendly de Turismo de Santiago.",
+      gl: "Brunch con opcións veganas e vexetarianas preto da Catedral e San Martiño Pinario, cunha terraza ampla. Incluído na listaxe oficial de locais dog friendly de Turismo de Santiago.",
+      en: "Brunch with vegan and vegetarian options near the Cathedral and San Martiño Pinario, with a spacious terrace. Featured on Turismo de Santiago's official list of dog-friendly spots."
+    }
+  },
+  {
+    name: { es: "A Tasquiña de San Pedro", gl: "A Tasquiña de San Pedro", en: "A Tasquiña de San Pedro" },
+    type: "comer",
+    tagIcon: "plate",
+    tag: { es: "Tapas", gl: "Tapas", en: "Tapas" },
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=A+Tasquina+de+San+Pedro+Santiago+de+Compostela",
+    description: {
+      es: "Bar acogedor en la Cruz de San Pedro, con raciones, desayunos y una selección de vinos muy amplia. Espíritu de taberna de siempre con cocina actual.",
+      gl: "Bar acolledor na Cruz de San Pedro, con racións, almorzos e unha selección de viños moi ampla. Espírito de taberna de sempre con cociña actual.",
+      en: "A cozy bar at the Cruz de San Pedro, with sharing plates, breakfasts, and a wide wine selection. Old-school tavern spirit with modern cooking."
+    }
+  },
+  {
+    name: { es: "Bar Suso", gl: "Bar Suso", en: "Bar Suso" },
+    type: "comer",
+    tagIcon: "terrace",
+    tag: { es: "Terraza", gl: "Terraza", en: "Terrace" },
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Bar+Suso+Rua+do+Vilar+Santiago+de+Compostela",
+    description: {
+      es: "Cafetería clásica de la Rúa do Vilar, con desayunos, plato del día y raciones. Tu perro tiene sitio tanto en la terraza bajo los soportales como dentro del local.",
+      gl: "Cafetaría clásica da Rúa do Vilar, con almorzos, prato do día e racións. O teu can ten sitio tanto na terraza baixo os soportais como dentro do local.",
+      en: "A classic café on Rúa do Vilar, with breakfasts, a daily set menu, and sharing plates. Your dog has room both on the arcaded terrace and inside."
+    }
+  },
+  {
     name: { es: "Parque canino de Eugenio Granell", gl: "Parque canino de Eugenio Granell", en: "Eugenio Granell dog park" },
     type: "parque",
     tagIcon: "fence",
@@ -1647,21 +1721,21 @@ const PERRO_ITEMS = [
     tag: { es: "Parque vallado", gl: "Parque valado", en: "Fenced dog park" },
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=Parque+de+Galeras+Santiago+de+Compostela",
     description: {
-      es: "Parque vallado junto al campo de Santa Isabel, con elementos de agility, zonas de sombra y acceso a un tramo poco profundo del río Sarela para refrescarse.",
-      gl: "Parque valado xunto ao campo de Santa Isabel, con elementos de agility, zonas de sombra e acceso a un treito pouco profundo do río Sarela para refrescarse.",
-      en: "A fenced dog park next to the Santa Isabel field, with agility equipment, shaded areas, and access to a shallow stretch of the Sarela river to cool off."
+      es: "Parque vallado junto al campo de Santa Isabel, con zonas de sombra y acceso a un tramo poco profundo del río Sarela para refrescarse. A diferencia de Eugenio Granell, no tiene elementos de agility.",
+      gl: "Parque valado xunto ao campo de Santa Isabel, con zonas de sombra e acceso a un treito pouco profundo do río Sarela para refrescarse. A diferenza de Eugenio Granell, non ten elementos de agility.",
+      en: "A fenced dog park next to the Santa Isabel field, with shaded areas and access to a shallow stretch of the Sarela river to cool off. Unlike Eugenio Granell, it has no agility equipment."
     }
   },
   {
-    name: { es: "Zona de perricidad de Belvís", gl: "Zona de perricidade de Belvís", en: "Belvís off-leash zone" },
+    name: { es: "Parque canino de Belvís", gl: "Parque canino de Belvís", en: "Belvís dog park" },
     type: "parque",
-    tagIcon: "leaf",
-    tag: { es: "Zona sin correa", gl: "Zona sen correa", en: "Off-leash zone" },
+    tagIcon: "fence",
+    tag: { es: "Parque vallado", gl: "Parque valado", en: "Fenced dog park" },
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=Parque+de+Belvis+Santiago+de+Compostela",
     description: {
-      es: "Parque tranquilo cerca del casco histórico, con la pendiente ideal para perros con mucha energía. Una de las seis zonas de Santiago habilitadas para pasear sin correa.",
-      gl: "Parque tranquilo preto do casco histórico, coa pendente ideal para cans con moita enerxía. Unha das seis zonas de Santiago habilitadas para pasear sen correa.",
-      en: "A quiet park near the old town, with just the right slope for high-energy dogs. One of Santiago's six designated off-leash zones."
+      es: "Antigua zona de paseo sin correa que el Concello valló recientemente, con puerta de acceso, fuente de agua y bancos nuevos. Cerca del casco histórico, con la pendiente ideal para perros con mucha energía.",
+      gl: "Antiga zona de paseo sen correa que o Concello valou recentemente, con porta de acceso, fonte de auga e bancos novos. Preto do casco histórico, coa pendente ideal para cans con moita enerxía.",
+      en: "A former off-leash walking area that the city council recently fenced in, adding a gate, a water fountain, and new benches. Close to the old town, with just the right slope for high-energy dogs."
     }
   },
   {

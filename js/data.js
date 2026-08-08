@@ -1584,6 +1584,7 @@ const PERRO_ITEMS = [
   {
     name: { es: "Sixto", gl: "Sixto", en: "Sixto" },
     type: "comer",
+    image: "https://i.imgur.com/PzmVgPz.jpeg",
     tagIcon: "fish",
     tag: { es: "Marisco", gl: "Marisco", en: "Seafood" },
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=Casa+Sixto+Rua+do+Franco+Santiago+de+Compostela",
@@ -1596,6 +1597,7 @@ const PERRO_ITEMS = [
   {
     name: { es: "El Muelle", gl: "El Muelle", en: "El Muelle" },
     type: "comer",
+    image: "https://i.imgur.com/CU0fqvn.jpeg",
     tagIcon: "cup",
     tag: { es: "Cafetería", gl: "Cafetaría", en: "Café" },
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=El+Muelle+Rua+da+Senra+Santiago+de+Compostela",
@@ -1608,6 +1610,7 @@ const PERRO_ITEMS = [
   {
     name: { es: "Redes", gl: "Redes", en: "Redes" },
     type: "comer",
+    image: "https://i.imgur.com/eCN3GeH.jpeg",
     tagIcon: "fish",
     tag: { es: "Marisco", gl: "Marisco", en: "Seafood" },
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=Redes+Rua+dos+Bautizados+Santiago+de+Compostela",
@@ -1620,6 +1623,7 @@ const PERRO_ITEMS = [
   {
     name: { es: "Café La Morena", gl: "Café La Morena", en: "Café La Morena" },
     type: "comer",
+    image: "https://i.imgur.com/sazIk39.jpeg",
     tagIcon: "terrace",
     tag: { es: "Terraza", gl: "Terraza", en: "Terrace" },
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=Cafe+La+Morena+Rua+de+San+Clemente+Santiago+de+Compostela",
@@ -1645,6 +1649,7 @@ const PERRO_ITEMS = [
   {
     name: { es: "Arena Cafetería", gl: "Arena Cafetería", en: "Arena Cafetería" },
     type: "comer",
+    image: "https://i.imgur.com/kaLAcvk.jpeg",
     tagIcon: "cup",
     tag: { es: "Cafetería", gl: "Cafetaría", en: "Café" },
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=Arena+Cafeteria+Rua+de+Alfredo+Branas+Santiago+de+Compostela",
@@ -1657,6 +1662,7 @@ const PERRO_ITEMS = [
   {
     name: { es: "A Café", gl: "A Café", en: "A Café" },
     type: "comer",
+    image: "https://i.imgur.com/hFj2Hr1.png",
     tagIcon: "cup",
     tag: { es: "Cafetería de especialidad", gl: "Cafetaría de especialidade", en: "Specialty coffee" },
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=A+Cafe+Praza+de+San+Fiz+Santiago+de+Compostela",
@@ -1669,6 +1675,7 @@ const PERRO_ITEMS = [
   {
     name: { es: "Cáscara Café & Brunch", gl: "Cáscara Café & Brunch", en: "Cáscara Café & Brunch" },
     type: "comer",
+    image: "https://i.imgur.com/3vdz683.jpeg",
     tagIcon: "cup",
     tag: { es: "Brunch", gl: "Brunch", en: "Brunch" },
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=Cascara+Cafe+Brunch+Rua+da+Troia+Santiago+de+Compostela",
@@ -1681,6 +1688,7 @@ const PERRO_ITEMS = [
   {
     name: { es: "A Tasquiña de San Pedro", gl: "A Tasquiña de San Pedro", en: "A Tasquiña de San Pedro" },
     type: "comer",
+    image: "https://i.imgur.com/LSwVig6.jpeg",
     tagIcon: "plate",
     tag: { es: "Tapas", gl: "Tapas", en: "Tapas" },
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=A+Tasquina+de+San+Pedro+Santiago+de+Compostela",
@@ -1693,6 +1701,7 @@ const PERRO_ITEMS = [
   {
     name: { es: "Bar Suso", gl: "Bar Suso", en: "Bar Suso" },
     type: "comer",
+    image: "https://i.imgur.com/vBIWkAS.jpeg",
     tagIcon: "terrace",
     tag: { es: "Terraza", gl: "Terraza", en: "Terrace" },
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=Bar+Suso+Rua+do+Vilar+Santiago+de+Compostela",
@@ -1705,6 +1714,7 @@ const PERRO_ITEMS = [
   {
     name: { es: "Parque canino de Eugenio Granell", gl: "Parque canino de Eugenio Granell", en: "Eugenio Granell dog park" },
     type: "parque",
+    image: "https://i.imgur.com/wsIISZK.jpeg",
     tagIcon: "fence",
     tag: { es: "Parque vallado", gl: "Parque valado", en: "Fenced dog park" },
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=Parque+Eugenio+Granell+O+Paxonal+Santiago+de+Compostela",
@@ -1717,6 +1727,7 @@ const PERRO_ITEMS = [
   {
     name: { es: "Parque canino de Galeras", gl: "Parque canino de Galeras", en: "Galeras dog park" },
     type: "parque",
+    image: "https://i.imgur.com/hM0FmNi.jpeg",
     tagIcon: "fence",
     tag: { es: "Parque vallado", gl: "Parque valado", en: "Fenced dog park" },
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=Parque+de+Galeras+Santiago+de+Compostela",
@@ -1729,6 +1740,7 @@ const PERRO_ITEMS = [
   {
     name: { es: "Parque canino de Belvís", gl: "Parque canino de Belvís", en: "Belvís dog park" },
     type: "parque",
+    image: "https://i.imgur.com/xt5k4ca.jpeg",
     tagIcon: "fence",
     tag: { es: "Parque vallado", gl: "Parque valado", en: "Fenced dog park" },
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=Parque+de+Belvis+Santiago+de+Compostela",
@@ -1741,6 +1753,7 @@ const PERRO_ITEMS = [
   {
     name: { es: "Zona de perricidad de la Alameda", gl: "Zona de perricidade da Alameda", en: "Alameda off-leash zone" },
     type: "parque",
+    image: "https://i.imgur.com/rdyG3vA.jpeg",
     tagIcon: "leaf",
     tag: { es: "Zona sin correa", gl: "Zona sen correa", en: "Off-leash zone" },
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=Parque+da+Alameda+Santiago+de+Compostela",
@@ -1753,6 +1766,7 @@ const PERRO_ITEMS = [
   {
     name: { es: "Cidade da Cultura", gl: "Cidade da Cultura", en: "Cidade da Cultura" },
     type: "ruta",
+    image: "https://i.imgur.com/a3cv4PF.jpeg",
     tagIcon: "footprints",
     tag: { es: "Paseo con vistas", gl: "Paseo con vistas", en: "Scenic walk" },
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=Cidade+da+Cultura+de+Galicia+Santiago+de+Compostela",
@@ -1765,6 +1779,7 @@ const PERRO_ITEMS = [
   {
     name: { es: "Monte do Gozo", gl: "Monte do Gozo", en: "Monte do Gozo" },
     type: "ruta",
+    image: "https://i.imgur.com/RECQ3Rk.jpeg",
     tagIcon: "footprints",
     tag: { es: "Mirador", gl: "Miradoiro", en: "Viewpoint" },
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=Monte+do+Gozo+Santiago+de+Compostela",
@@ -1777,6 +1792,7 @@ const PERRO_ITEMS = [
   {
     name: { es: "Río Sarela (Galeras)", gl: "Río Sarela (Galeras)", en: "Sarela River (Galeras)" },
     type: "ruta",
+    image: "https://i.imgur.com/FNgVmsR.jpeg",
     tagIcon: "wave",
     tag: { es: "Chapuzón en el río", gl: "Chapuzón no río", en: "River dip" },
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=Rio+Sarela+Galeras+Santiago+de+Compostela",
@@ -1789,6 +1805,7 @@ const PERRO_ITEMS = [
   {
     name: { es: "Río Sar (Pontepedriña)", gl: "Río Sar (Pontepedriña)", en: "Sar River (Pontepedriña)" },
     type: "ruta",
+    image: "https://i.imgur.com/6IjMFeO.png",
     tagIcon: "wave",
     tag: { es: "Chapuzón en el río", gl: "Chapuzón no río", en: "River dip" },
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=Rio+Sar+Pontepedrina+Santiago+de+Compostela",

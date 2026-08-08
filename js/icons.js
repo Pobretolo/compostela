@@ -201,4 +201,26 @@ const ICONS = {
       <ellipse cx="17" cy="9.5" rx="1.8" ry="2.4"/>
       <path d="M12 12.2c-3.3 0-6 2.3-6 4.7 0 1.5 1.3 2.6 2.9 2.2 1-.25 2-.6 3.1-.6s2.1.35 3.1.6c1.6.4 2.9-.7 2.9-2.2 0-2.4-2.7-4.7-6-4.7z"/>
     </svg>`,
+
+  // Parque canino vallado — valla
+  fence: () => `
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 4v16M10 4v16M15 4v16M20 4v16"/>
+      <path d="M2 9h20M2 15h20"/>
+    </svg>`,
+
+  // Rutas y paseos — pisadas
+  footprints: () => `
+    <svg viewBox="0 0 24 24" fill="currentColor" stroke="none">
+      <ellipse cx="8" cy="7" rx="2.4" ry="3.2" transform="rotate(-15 8 7)"/>
+      <ellipse cx="16" cy="12.5" rx="2.4" ry="3.2" transform="rotate(15 16 12.5)"/>
+      <ellipse cx="7.3" cy="16" rx="2.4" ry="3.2" transform="rotate(-15 7.3 16)"/>
+    </svg>`,
+
+  // Chapuzón en el río — ola
+  wave: () => `
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2 9c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/>
+      <path d="M2 15c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/>
+    </svg>`,
 };

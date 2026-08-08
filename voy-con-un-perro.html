@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dónde comer — Guía de Santiago de Compostela</title>
+<title>¡Voy con un perro! — Guía de Santiago de Compostela</title>
 <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/favicon-192.png">
@@ -39,9 +39,9 @@
       <a href="foto-explorer.html" data-i18n="nav_photo">Foto Explorer</a>
       <a href="que-ver.html" data-i18n="nav_ver">Qué ver en un día</a>
       <a href="tengo-coche.html" data-i18n="nav_coche">¡Tengo coche!</a>
-      <a href="comer.html" class="active" data-i18n="nav_comer">Dónde comer</a>
+      <a href="comer.html" data-i18n="nav_comer">Dónde comer</a>
       <a href="salir.html" data-i18n="nav_salir">¿Por dónde salir?</a>
-      <a href="voy-con-un-perro.html" data-i18n="nav_perro">¡Voy con un perro!</a>
+      <a href="voy-con-un-perro.html" class="active" data-i18n="nav_perro">¡Voy con un perro!</a>
       <a href="fiestas.html" data-i18n="nav_fiestas">Fiestas del Apóstol</a>
       <a href="paris-dakar.html" data-i18n="nav_parisdakar">Pasaporte París-Dakar</a>
       <a href="datos-interes.html" data-i18n="nav_datos">Datos de interés</a>
@@ -56,30 +56,20 @@
 
 <section class="section">
   <div class="section-head">
-    <span class="eyebrow" data-i18n="eyebrow_comer">Dónde comer</span>
-    <h2 data-i18n="page_comer_title">Dónde comer</h2>
-    <p data-i18n="page_comer_sub">Nuestros sitios de confianza en Santiago, con ubicación en Google Maps.</p>
+    <span class="eyebrow" data-i18n="eyebrow_perro">Con mascota</span>
+    <h2 data-i18n="page_perro_title">¡Voy con un perro!</h2>
+    <p data-i18n="page_perro_sub">Restaurantes y cafeterías donde tu perro es bienvenido, parques caninos y rutas de paseo por Santiago.</p>
   </div>
 
   <div class="container">
     <div class="filter-row">
-      <button class="filter-pill active" data-cat-filter="all" data-i18n="comer_filter_all">Todos</button>
-      <button class="filter-pill" data-cat-filter="marisco"><span class="pill-icon" data-icon="fish"></span><span data-i18n="comer_cat_marisco">Marisco</span></button>
-      <button class="filter-pill" data-cat-filter="tradicional"><span class="pill-icon" data-icon="pot"></span><span data-i18n="comer_cat_tradicional">Tradicional</span></button>
-      <button class="filter-pill" data-cat-filter="tapas"><span class="pill-icon" data-icon="plate"></span><span data-i18n="comer_cat_tapas">Tapas</span></button>
-      <button class="filter-pill" data-cat-filter="cafeteria"><span class="pill-icon" data-icon="cup"></span><span data-i18n="comer_cat_cafeteria">Cafetería / postre</span></button>
-      <button class="filter-pill" data-cat-filter="altacocina"><span class="pill-icon" data-icon="star"></span><span data-i18n="comer_cat_altacocina">Alta cocina</span></button>
-      <button class="filter-pill" data-cat-filter="vegano"><span class="pill-icon" data-icon="leaf"></span><span data-i18n="comer_cat_vegano">Vegano / vegetariano</span></button>
+      <button class="filter-pill active" data-perro-type-filter="all" data-i18n="perro_filter_all">Todos</button>
+      <button class="filter-pill" data-perro-type-filter="comer"><span class="pill-icon" data-icon="cup"></span><span data-i18n="perro_filter_comer">Restaurantes y cafeterías</span></button>
+      <button class="filter-pill" data-perro-type-filter="parque"><span class="pill-icon" data-icon="fence"></span><span data-i18n="perro_filter_parque">Parques caninos</span></button>
+      <button class="filter-pill" data-perro-type-filter="ruta"><span class="pill-icon" data-icon="footprints"></span><span data-i18n="perro_filter_ruta">Rutas y actividades</span></button>
     </div>
 
-    <div class="filter-row">
-      <button class="filter-pill" id="filter-breakfast"><span class="pill-icon" data-icon="cup"></span><span data-i18n="comer_filter_breakfast">Desayunos</span></button>
-      <button class="filter-pill" id="filter-terrace"><span class="pill-icon" data-icon="terrace"></span><span data-i18n="comer_filter_terrace">Terraza / jardín</span></button>
-      <button class="filter-pill" id="filter-michelin"><span class="pill-icon" data-icon="michelin"></span><span data-i18n="comer_filter_michelin">Guía Michelin</span></button>
-      <button class="filter-pill" id="filter-pet"><span class="pill-icon" data-icon="paw"></span><span data-i18n="comer_filter_pet">Pet friendly</span></button>
-    </div>
-
-    <div class="grid" id="comer-list" style="margin-top:36px;"></div>
+    <div class="grid" id="perro-list" style="margin-top:36px;"></div>
   </div>
 </section>
 
@@ -90,6 +80,6 @@
 <script src="js/i18n.js"></script>
 <script src="js/data.js"></script>
 <script src="js/icons.js"></script>
-<script src="js/main.js"></script>
+<script src="js/perro.js"></script>
 </body>
 </html>

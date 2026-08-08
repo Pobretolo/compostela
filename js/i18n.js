@@ -12,6 +12,7 @@ const UI_TEXT = {
   nav_coche:       { es: "¡Tengo coche!",   gl: "¡Teño coche!",    en: "I have a car!" },
   nav_salir:       { es: "¿Por dónde salir?", gl: "¿Por onde saír?", en: "Nightlife guide" },
   nav_comer:       { es: "Dónde comer",     gl: "Onde comer",      en: "Where to eat" },
+  nav_perro:       { es: "¡Voy con un perro!", gl: "¡Vou cun can!", en: "Travelling with a dog!" },
   nav_fiestas:     { es: "Fiestas del Apóstol", gl: "Festas do Apóstolo", en: "Fiestas del Apóstol" },
   nav_parisdakar:  { es: "Pasaporte París-Dakar", gl: "Pasaporte París-Dakar", en: "Paris-Dakar passport" },
   nav_datos:       { es: "Datos de interés", gl: "Datos de interese", en: "Practical info" },
@@ -20,6 +21,7 @@ const UI_TEXT = {
   eyebrow_ver:        { es: "Ruta recomendada", gl: "Ruta recomendada", en: "Recommended route" },
   eyebrow_coche:      { es: "Escapadas", gl: "Escapadas", en: "Day trips" },
   eyebrow_comer:      { es: "Gastronomía", gl: "Gastronomía", en: "Food & drink" },
+  eyebrow_perro:      { es: "Con mascota", gl: "Con mascota", en: "With a pet" },
   eyebrow_salir:      { es: "Vida nocturna", gl: "Vida nocturna", en: "Nightlife" },
   eyebrow_fiestas:    { es: "Programa oficial", gl: "Programa oficial", en: "Official program" },
   eyebrow_parisdakar: { es: "Tradición compostelana", gl: "Tradición compostelá", en: "Compostela tradition" },
@@ -43,6 +45,9 @@ const UI_TEXT = {
 
   home_comer_title: { es: "Dónde comer", gl: "Onde comer", en: "Where to eat" },
   home_comer_desc:  { es: "Nuestros sitios de confianza para comer bien en Santiago.", gl: "Os nosos sitios de confianza para comer ben en Santiago.", en: "Our trusted spots to eat well in Santiago." },
+
+  home_perro_title: { es: "¡Voy con un perro!", gl: "¡Vou cun can!", en: "Travelling with a dog!" },
+  home_perro_desc:  { es: "Restaurantes, parques caninos y rutas de paseo para disfrutar de Santiago con tu perro.", gl: "Restaurantes, parques caninos e rutas de paseo para gozar de Santiago co teu can.", en: "Restaurants, dog parks, and walking routes to enjoy Santiago with your dog." },
 
   home_fiestas_title: { es: "Fiestas del Apóstol", gl: "Festas do Apóstolo", en: "Fiestas del Apóstol" },
   home_fiestas_desc:  { es: "El programa oficial de las fiestas patronales, del 22 al 31 de julio.", gl: "O programa oficial das festas patronais, do 22 ao 31 de xullo.", en: "The official program for the patron saint festivities, 22 to 31 July." },
@@ -153,6 +158,18 @@ const UI_TEXT = {
   comer_filter_michelin: { es: "Guía Michelin", gl: "Guía Michelin", en: "Michelin Guide" },
   comer_filter_pet: { es: "Pet friendly", gl: "Pet friendly", en: "Pet friendly" },
   comer_no_results: { es: "No hay locales con esos filtros. Prueba a quitar alguno.", gl: "Non hai locais con eses filtros. Proba a quitar algún.", en: "No spots match those filters. Try removing one." },
+
+  page_perro_title: { es: "¡Voy con un perro!", gl: "¡Vou cun can!", en: "Travelling with a dog!" },
+  page_perro_sub: {
+    es: "Restaurantes y cafeterías donde tu perro es bienvenido, parques caninos y rutas de paseo por Santiago. Información contrastada con el listado oficial de Turismo de Santiago y prensa local — si vas a un restaurante, siempre es buena idea avisar al reservar.",
+    gl: "Restaurantes e cafetarías onde o teu can é benvido, parques caninos e rutas de paseo por Santiago. Información contrastada coa listaxe oficial de Turismo de Santiago e prensa local — se vas a un restaurante, sempre é boa idea avisar ao reservar.",
+    en: "Restaurants and cafés where your dog is welcome, dog parks, and walking routes around Santiago. Information cross-checked against Turismo de Santiago's official list and local press — if you're heading to a restaurant, it's always a good idea to mention your pet when booking."
+  },
+  perro_filter_all: { es: "Todos", gl: "Todos", en: "All" },
+  perro_filter_comer: { es: "Restaurantes y cafeterías", gl: "Restaurantes e cafetarías", en: "Restaurants & cafés" },
+  perro_filter_parque: { es: "Parques caninos", gl: "Parques caninos", en: "Dog parks" },
+  perro_filter_ruta: { es: "Rutas y actividades", gl: "Rutas e actividades", en: "Routes & activities" },
+  perro_no_results: { es: "No hay sitios con esos filtros. Prueba a quitar alguno.", gl: "Non hai sitios con eses filtros. Proba a quitar algún.", en: "No spots match those filters. Try removing one." },
 
   page_fiestas_title: { es: "Fiestas del Apóstol 2026", gl: "Festas do Apóstolo 2026", en: "Fiestas del Apóstol 2026" },
   page_fiestas_sub: {

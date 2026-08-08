@@ -1518,6 +1518,216 @@ const COMER_ITEMS = [
 
 
 /* --------------------------------------------------------------------------
+   5b. VOY CON UN PERRO! — restaurantes, parques caninos y rutas dog friendly
+   type: "comer" | "parque" | "ruta" (para los filtros)
+   tagIcon: clave de ICONS para el icono de la etiqueta
+   Fuentes: santiagoturismo.com/santiguau (listado oficial de Turismo de
+   Santiago) y reportajes de El Español/Quincemil (2021-2025). Solo se
+   incluyen locales con confirmación en fuentes fiables, no solo directorios
+   agregadores.
+   -------------------------------------------------------------------------- */
+
+const PERRO_ITEMS = [
+  {
+    name: "Adelia",
+    type: "comer",
+    tagIcon: "cup",
+    tag: { es: "Cafetería", gl: "Cafetaría", en: "Café" },
+    image: "https://i.imgur.com/xIOQRaH.jpeg",
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Ad%C3%A8lia+Caf%C3%A9+Praza+de+San+Miguel+dos+Agros+Santiago+de+Compostela",
+    description: {
+      es: "Cafetería tranquila junto a San Martiño Pinario, con tostadas y tartas caseras. Uno de los primeros locales de la ciudad en anunciarse explícitamente como pet friendly.",
+      gl: "Cafetaría tranquila xunto a San Martiño Pinario, con torradas e tartas caseiras. Un dos primeiros locais da cidade en anunciarse explicitamente como pet friendly.",
+      en: "A calm café next to San Martiño Pinario, with toasts and homemade cakes. One of the first spots in the city to explicitly bill itself as pet friendly."
+    }
+  },
+  {
+    name: "O Sendeiro Food Experience",
+    type: "comer",
+    tagIcon: "star",
+    tag: { es: "Alta cocina", gl: "Alta cociña", en: "Fine dining" },
+    image: "https://i.imgur.com/myKg5DD.jpeg",
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=O+Sendeiro+Rua+Olvido+Santiago+de+Compostela",
+    description: {
+      es: "Cocina gallega moderna en el patio de piedra de una antigua curtiduría. Puedes ir con tu perro, pero conviene reservar mesa avisando de que vais acompañados.",
+      gl: "Cociña galega moderna no patio de pedra dunha antiga curtidoiría. Podes ir co teu can, pero convén reservar mesa avisando de que ides acompañados.",
+      en: "Modern Galician cuisine in the stone courtyard of a former tannery. You can bring your dog, but it's best to book ahead and mention you'll be coming with a pet."
+    }
+  },
+  {
+    name: "Abastos 2.0",
+    type: "comer",
+    tagIcon: "fish",
+    tag: { es: "Marisco", gl: "Marisco", en: "Seafood" },
+    image: "https://i.imgur.com/JxXrWA4.jpeg",
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Abastos+2.0+Mercado+de+Abastos+Santiago+de+Compostela",
+    description: {
+      es: "Dentro del propio Mercado de Abastos, con una gran mesa compartida y producto fresco del día. Tu perro puede acompañarte dentro del local.",
+      gl: "Dentro do propio Mercado de Abastos, cunha gran mesa compartida e produto fresco do día. O teu can pode acompañarte dentro do local.",
+      en: "Right inside the Mercado de Abastos, with a big shared table and fresh same-day produce. Your dog is welcome inside."
+    }
+  },
+  {
+    name: "Café Costa Vella (O Xardín das Delicias)",
+    type: "comer",
+    tagIcon: "terrace",
+    tag: { es: "Cafetería con jardín", gl: "Cafetaría con xardín", en: "Café with garden" },
+    image: "https://i.imgur.com/G8fSy9T.jpeg",
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Hotel+Costa+Vella+Porta+da+Pena+Santiago+de+Compostela",
+    description: {
+      es: "El jardín interior del Hotel Costa Vella, con manzanos, limoneros y una fuente de piedra entre las mesas. Perfecto para desayunar tranquilamente con tu perro a la sombra.",
+      gl: "O xardín interior do Hotel Costa Vella, con maceiras, limoeiros e unha fonte de pedra entre as mesas. Perfecto para almorzar tranquilamente co teu can á sombra.",
+      en: "The interior garden of the Hotel Costa Vella, with apple trees, lemon trees, and a stone fountain among the tables. Perfect for a relaxed breakfast with your dog in the shade."
+    }
+  },
+  {
+    name: "Sixto",
+    type: "comer",
+    tagIcon: "fish",
+    tag: { es: "Marisco", gl: "Marisco", en: "Seafood" },
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Casa+Sixto+Rua+do+Franco+Santiago+de+Compostela",
+    description: {
+      es: "Marisquería clásica de la Rúa do Franco, especializada en el marisco típico gallego. Local habitual en los listados de sitios dog friendly de Santiago.",
+      gl: "Marisquería clásica da Rúa do Franco, especializada no marisco típico galego. Local habitual nas listaxes de sitios dog friendly de Santiago.",
+      en: "A classic seafood restaurant on Rúa do Franco, specializing in typical Galician shellfish. A regular fixture on Santiago's dog-friendly listings."
+    }
+  },
+  {
+    name: "El Muelle",
+    type: "comer",
+    tagIcon: "cup",
+    tag: { es: "Cafetería", gl: "Cafetaría", en: "Café" },
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=El+Muelle+Rua+da+Senra+Santiago+de+Compostela",
+    description: {
+      es: "Cafetería histórica fundada en 1931 en la Rúa da Senra, especializada en cafés, chocolate y desayunos. Un clásico dog friendly del Ensanche.",
+      gl: "Cafetaría histórica fundada en 1931 na Rúa da Senra, especializada en cafés, chocolate e almorzos. Un clásico dog friendly do Ensanche.",
+      en: "A historic café founded in 1931 on Rúa da Senra, known for its coffee, hot chocolate, and breakfasts. A classic dog-friendly spot in the Ensanche district."
+    }
+  },
+  {
+    name: "Redes",
+    type: "comer",
+    tagIcon: "fish",
+    tag: { es: "Marisco", gl: "Marisco", en: "Seafood" },
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Redes+Rua+dos+Bautizados+Santiago+de+Compostela",
+    description: {
+      es: "Marisco de la ría elaborado de forma natural, en la Rúa dos Bautizados. Incluido en el listado oficial de locales dog friendly de Turismo de Santiago.",
+      gl: "Marisco da ría elaborado de xeito natural, na Rúa dos Bautizados. Incluído na listaxe oficial de locais dog friendly de Turismo de Santiago.",
+      en: "Naturally prepared seafood from the ría, on Rúa dos Bautizados. Featured on Turismo de Santiago's official list of dog-friendly spots."
+    }
+  },
+  {
+    name: "Café La Morena",
+    type: "comer",
+    tagIcon: "terrace",
+    tag: { es: "Terraza", gl: "Terraza", en: "Terrace" },
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Cafe+La+Morena+Rua+de+San+Clemente+Santiago+de+Compostela",
+    description: {
+      es: "Clásico de las tardes compostelanas junto a las huertas del casco histórico, con desayunos, brunch y sesiones de DJ. Incluido en el listado oficial dog friendly de Turismo de Santiago.",
+      gl: "Clásico das tardes composteláns xunto ás hortas do casco histórico, con almorzos, brunch e sesións de DJ. Incluído na listaxe oficial dog friendly de Turismo de Santiago.",
+      en: "A classic Compostela afternoon spot next to the old town's vegetable gardens, with breakfast, brunch, and DJ sessions. Featured on Turismo de Santiago's official dog-friendly list."
+    }
+  },
+  {
+    name: "Parque canino de Eugenio Granell",
+    type: "parque",
+    tagIcon: "fence",
+    tag: { es: "Parque vallado", gl: "Parque valado", en: "Fenced dog park" },
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Parque+Eugenio+Granell+O+Paxonal+Santiago+de+Compostela",
+    description: {
+      es: "Parque vallado en O Paxonal, entre la zona amurallada y el río. Tiene rampas y túneles de agility, bancos para los dueños y una fuente de agua para los perros.",
+      gl: "Parque valado en O Paxonal, entre a zona amurallada e o río. Ten rampas e túneles de agility, bancos para os donos e unha fonte de auga para os cans.",
+      en: "A fenced dog park in O Paxonal, between the walled area and the river. It has agility ramps and tunnels, benches for owners, and a water fountain for dogs."
+    }
+  },
+  {
+    name: "Parque canino de Galeras",
+    type: "parque",
+    tagIcon: "fence",
+    tag: { es: "Parque vallado", gl: "Parque valado", en: "Fenced dog park" },
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Parque+de+Galeras+Santiago+de+Compostela",
+    description: {
+      es: "Parque vallado junto al campo de Santa Isabel, con elementos de agility, zonas de sombra y acceso a un tramo poco profundo del río Sarela para refrescarse.",
+      gl: "Parque valado xunto ao campo de Santa Isabel, con elementos de agility, zonas de sombra e acceso a un treito pouco profundo do río Sarela para refrescarse.",
+      en: "A fenced dog park next to the Santa Isabel field, with agility equipment, shaded areas, and access to a shallow stretch of the Sarela river to cool off."
+    }
+  },
+  {
+    name: "Zona de perricidad de Belvís",
+    type: "parque",
+    tagIcon: "leaf",
+    tag: { es: "Zona sin correa", gl: "Zona sen correa", en: "Off-leash zone" },
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Parque+de+Belvis+Santiago+de+Compostela",
+    description: {
+      es: "Parque tranquilo cerca del casco histórico, con la pendiente ideal para perros con mucha energía. Una de las seis zonas de Santiago habilitadas para pasear sin correa.",
+      gl: "Parque tranquilo preto do casco histórico, coa pendente ideal para cans con moita enerxía. Unha das seis zonas de Santiago habilitadas para pasear sen correa.",
+      en: "A quiet park near the old town, with just the right slope for high-energy dogs. One of Santiago's six designated off-leash zones."
+    }
+  },
+  {
+    name: "Zona de perricidad de la Alameda",
+    type: "parque",
+    tagIcon: "leaf",
+    tag: { es: "Zona sin correa", gl: "Zona sen correa", en: "Off-leash zone" },
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Parque+da+Alameda+Santiago+de+Compostela",
+    description: {
+      es: "El parque más emblemático de Santiago, con amplios senderos y vistas a la Catedral. Una de las seis zonas de Santiago habilitadas para pasear sin correa.",
+      gl: "O parque máis emblemático de Santiago, con amplos carreiros e vistas á Catedral. Unha das seis zonas de Santiago habilitadas para pasear sen correa.",
+      en: "Santiago's most iconic park, with wide paths and views of the Cathedral. One of the city's six designated off-leash zones."
+    }
+  },
+  {
+    name: "Cidade da Cultura",
+    type: "ruta",
+    tagIcon: "footprints",
+    tag: { es: "Paseo con vistas", gl: "Paseo con vistas", en: "Scenic walk" },
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Cidade+da+Cultura+de+Galicia+Santiago+de+Compostela",
+    description: {
+      es: "Grandes explanadas y caminos con vistas espectaculares de la ciudad, ideales para un paseo tranquilo y con poca gente.",
+      gl: "Grandes explanadas e camiños con vistas espectaculares da cidade, ideais para un paseo tranquilo e con pouca xente.",
+      en: "Large open esplanades and paths with spectacular views over the city, ideal for a relaxed walk without the crowds."
+    }
+  },
+  {
+    name: "Monte do Gozo",
+    type: "ruta",
+    tagIcon: "footprints",
+    tag: { es: "Mirador", gl: "Miradoiro", en: "Viewpoint" },
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Monte+do+Gozo+Santiago+de+Compostela",
+    description: {
+      es: "Zonas naturales y miradores a las afueras de la ciudad, perfectos para un paseo largo al aire libre — además del punto donde los peregrinos ven Santiago por primera vez.",
+      gl: "Zonas naturais e miradoiros nos arredores da cidade, perfectos para un paseo longo ao aire libre — ademais do punto onde os peregrinos ven Santiago por primeira vez.",
+      en: "Natural areas and viewpoints on the edge of the city, perfect for a long walk outdoors — also the spot where pilgrims catch their first glimpse of Santiago."
+    }
+  },
+  {
+    name: "Río Sarela (Galeras)",
+    type: "ruta",
+    tagIcon: "wave",
+    tag: { es: "Chapuzón en el río", gl: "Chapuzón no río", en: "River dip" },
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Rio+Sarela+Galeras+Santiago+de+Compostela",
+    description: {
+      es: "Tramo tranquilo del río Sarela donde los perros pueden refrescarse sin peligro, junto al parque canino de Galeras.",
+      gl: "Treito tranquilo do río Sarela onde os cans poden refrescarse sen perigo, xunto ao parque canino de Galeras.",
+      en: "A calm stretch of the Sarela river where dogs can safely cool off, right next to the Galeras dog park."
+    }
+  },
+  {
+    name: "Río Sar (Pontepedriña)",
+    type: "ruta",
+    tagIcon: "wave",
+    tag: { es: "Chapuzón en el río", gl: "Chapuzón no río", en: "River dip" },
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Rio+Sar+Pontepedrina+Santiago+de+Compostela",
+    description: {
+      es: "Zona de agua poco profunda con césped alrededor, en Pontepedriña. Ideal para que tu perro se refresque y corra después del baño.",
+      gl: "Zona de auga pouco profunda con céspede arredor, en Pontepedriña. Ideal para que o teu can se refresque e corra despois do baño.",
+      en: "A shallow stretch of water with grassy banks in Pontepedriña. Ideal for letting your dog cool off and run around after a dip."
+    }
+  }
+];
+
+
+/* --------------------------------------------------------------------------
    6. FIESTAS DEL APÓSTOL 2026 — programa oficial (22-31 de julio)
    Datos del programa oficial
    del Concello de Santiago. Si algo cambia de última hora, revisa

@@ -318,7 +318,23 @@ function initNavToggle() {
   });
 }
 
+/* Oculta el enlace "Fiestas del Apóstol" del menú (en todas las páginas) una
+   vez que ya no quedan eventos próximos en FIESTAS_ITEMS, igual que ya se
+   oculta la tarjeta correspondiente en la portada. */
+function hideFiestasNavIfPast() {
+  if (typeof FIESTAS_ITEMS === "undefined") return;
+  const links = document.querySelectorAll('[data-i18n="nav_fiestas"]');
+  if (!links.length) return;
+  const now = new Date();
+  const todayIso = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+  const anyUpcoming = FIESTAS_ITEMS.some((item) => !item.isoDate || item.isoDate >= todayIso);
+  if (!anyUpcoming) {
+    links.forEach((link) => { link.style.display = "none"; });
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   initLangToggle();
   initNavToggle();
+  hideFiestasNavIfPast();
 });
